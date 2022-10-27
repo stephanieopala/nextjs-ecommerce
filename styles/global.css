@@ -13,3 +13,16 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.button {
+  width: '60px';
+  background-color: #E24E1B;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #E24E1B;
+}
+.button:hover {
+  background-color: #9b2b06;
+  cursor: pointer;
+  border: 1px solid #9b2b06;
+}

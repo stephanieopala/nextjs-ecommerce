@@ -1,0 +1,37 @@
+.card {
+  width: 280px;
+  height: 380px;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.buttons {
+  width: '100%';
+  display: flex;
+  justify-content: space-between;
+}
+.name {
+  color: #654236;
+}
+.price {
+  color: #E24E1B;
+}
+.button {
+  width: '60px';
+  background-color: #E24E1B;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #E24E1B;
+}
+.button:hover {
+  background-color: #9b2b06;
+  cursor: pointer;
+  border: 1px solid #9b2b06;
+}
