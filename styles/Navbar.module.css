@@ -25,3 +25,14 @@
 .navlink a:hover {
   color: #f9826c;
 }
+.cart {
+  text-decoration: none;
+  color: #654236;
+}
+.cart span {
+  color: #E24E1B;
+}
+.cart:hover {
+  color: #f9826c;
+  cursor: pointer;
+}

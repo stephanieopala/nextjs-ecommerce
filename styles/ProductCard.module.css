@@ -22,16 +22,29 @@
 .price {
   color: #E24E1B;
 }
-.button {
-  width: '60px';
+.category {
+  color: #654236;
+  margin-bottom: 15px;
+}
+.buttonone, .buttontwo {
   background-color: #E24E1B;
   color: white;
-  padding: 10px 12px;
+  padding: 10px 10px;
   border-radius: 6px;
   border: 1px solid #E24E1B;
 }
-.button:hover {
-  background-color: #9b2b06;
+.buttonone:hover {
+  background-color: white;
+  color: #E24E1B;
+  border: 1px solid #E24E1B;
   cursor: pointer;
-  border: 1px solid #9b2b06;
+}
+.buttonone {
+  margin-right: 20px;
+}
+.buttontwo:hover {
+  background-color: white;
+  color: #E24E1B;
+  border: 1px solid #E24E1B;
+  cursor: pointer;
 }

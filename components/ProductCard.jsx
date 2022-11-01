@@ -1,8 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from '../styles/ProductCard.module.css';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/cartSlice';
 
-export const ProductCard = ({url, id, name, price, categoryName}) => {
+export const ProductCard = ({url, id, name, price, categoryName, product}) => {
+  const dispatch = useDispatch();
+
   return (
     <div className={styles.card}>
       <Image className={styles.image}
@@ -11,15 +15,20 @@ export const ProductCard = ({url, id, name, price, categoryName}) => {
         height={300}
       />
       <h4 className={styles.name}>{name}</h4>
-      <h5 className={styles.price}>{price}</h5>
-      <h6>{categoryName}</h6>
+      <h5 className={styles.price}>${price}</h5>
+      <h6 className={styles.category}>{categoryName}</h6>
       <div className={styles.buttons}>
-        <button className={styles.button}>
-          <Link href={`/shop/${id}`}>
+        <Link href={`/shop/${id}`}>
+          <button className={styles.buttonone}>
             Product Details
-          </Link>
+          </button>
+        </Link>
+        <button
+          className={styles.buttontwo}
+          onClick={() => dispatch(addToCart(product))}
+        >
+          Add to cart
         </button>
-        <button className={styles.button}>Add to cart</button>
       </div>
     </div>
   )

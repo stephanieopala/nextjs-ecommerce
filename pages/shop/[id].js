@@ -2,9 +2,11 @@ import { XataClient } from "../../src/xata";
 import Link from "next/link";
 import Image from 'next/image';
 import styles from '../../styles/ProductDetails.module.css';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../../redux/cartSlice';
 
 const ProductDetails = ({ item }) => {
-  console.log(item);
+  const dispatch = useDispatch();
   return (
     <div className={styles.wrapper}>
       <Link href="/shop">
@@ -17,12 +19,16 @@ const ProductDetails = ({ item }) => {
           height={450}
         />
         <div className={styles.details}>
-          <h4>Name: {item.name}</h4>
-          <p>Description: {item.description}</p>
-          <p className={styles.price}>Price: {item.price}</p>
-          <p className={styles.category}>Category: {item.category.name}</p>
+          <p><span className={styles.title}>Name: </span>{item.name}</p>
+          <p><span className={styles.title}>Description: </span>{item.description}</p>
+          <p className={styles.price}><span className={styles.title}>Price: </span>${item.price}</p>
+          <p className={styles.category}><span className={styles.title}>Category: </span>{item.category.name}</p>
           <div className={styles.button}>
-            <button>Add to cart</button>
+            <button
+              onClick={() => dispatch(addToCart(item))}
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
