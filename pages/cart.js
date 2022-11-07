@@ -37,7 +37,7 @@ const Cart = () => {
               <p>$ {item.price}</p>
               <p>{item.quantity}</p>
               <div className={styles.buttons}>
-              <button onClick={() => dispatch(incrementQuantity(item))}>
+                <button onClick={() => dispatch(incrementQuantity(item))}>
                   +
                 </button>
                 <button onClick={() => dispatch(decrementQuantity(item))}>
