@@ -7,7 +7,7 @@ const Footer = () => {
       <div className={styles.top}>
         <div>
           <p className={styles.logo}>Kwetu Furniture</p>
-          <p className="text-sm">Designed and manufactured in Kenya</p>
+          <p>Designed and manufactured in Kenya</p>
         </div>
         <div className={styles.container}>
           <p>About</p>
