@@ -3,6 +3,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-left: 6rem;
+  padding-right: 6rem;
   padding-bottom: 1rem;
 }
 .logo {
@@ -35,4 +37,9 @@
 .cart:hover {
   color: #f9826c;
   cursor: pointer;
+}
+@media only screen and (max-width: 768px) {
+  .navbar {
+    padding: 1rem;
+  }
 }

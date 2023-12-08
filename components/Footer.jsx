@@ -3,11 +3,10 @@ import styles from '../styles/Footer.module.css';
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <hr className={styles.footerBreak}/>
       <div className={styles.top}>
         <div>
           <p className={styles.logo}>Kwetu Furniture</p>
-          <p>Designed and manufactured in Kenya</p>
+          <p className={styles.info}>Designed and manufactured in Kenya</p>
         </div>
         <div className={styles.container}>
           <p>About</p>
@@ -37,10 +36,10 @@ const Footer = () => {
       </div>
       <div className={styles.bottom}>
         <p>@2023.All rights reserved</p>
-        <div>
+        {/* <div>
           <p>Privacy & Policy</p>
           <p>Terms & Conditions</p>
-        </div>
+        </div> */}
       </div>
     </footer>
   )
