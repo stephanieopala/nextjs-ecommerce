@@ -35,7 +35,7 @@ const Footer = () => {
         </div>
       </div>
       <div className={styles.bottom}>
-        <p>@2023.All rights reserved</p>
+        <p>&copy;2024.All rights reserved</p>
         {/* <div>
           <p>Privacy & Policy</p>
           <p>Terms & Conditions</p>
